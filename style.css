@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a252f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+.hero {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background-color: #2980b9;
+}
+
+.about-section, .gallery-section, .contact-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #1a252f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* تنسيقات هيئة التدريس */
+.faculty-section, .courses-section {
+    padding: 50px 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.courses-section {
+    background-color: #f4f6f7;
+}
+
+.faculty-grid, .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.faculty-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+}
+
+.faculty-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #3498db;
+}
+
+.faculty-card h3 {
+    color: #1a252f;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.faculty-card .role {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+/* تنسيقات المواد الدراسية */
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid #3498db;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card .icon {
+    font-size: 2.2rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    margin-bottom: 10px;
+    color: #1a252f;
+}
+
+.course-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* تنسيقات قسم التواصل */
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-info i {
+    margin-left: 10px;
+    color: #3498db;
+    width: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1a252f;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
+
+.social-links a:nth-child(1) {
+    background-color: #1877f2; /* Facebook blue */
+}
+
+.social-links a:nth-child(1):hover {
+    background-color: #145fc4;
+}
+
+.social-links a:nth-child(2) {
+    background-color: #25d366; /* WhatsApp green */
+}
+
+.social-links a:nth-child(2):hover {
+    background-color: #1eb958;
+}
+
+.social-links a:nth-child(3) {
+    background-color: #ff0000; /* YouTube red */
+}
+
+.social-links a:nth-child(3):hover {
+    background-color: #cc0000;
+}
