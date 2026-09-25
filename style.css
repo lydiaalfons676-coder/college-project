@@ -290,3 +290,123 @@ footer {
 .social-links a:nth-child(3):hover {
     background-color: #cc0000;
 }
+
+/* ===== Responsive / Mobile ===== */
+@media (max-width: 992px) {
+    .hero {
+        padding: 60px 15px;
+        min-height: 320px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 12px 4%;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 45px 12px;
+        min-height: 240px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        padding: 10px 22px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 40px 4%;
+    }
+
+    section h2 {
+        font-size: 1.35rem;
+    }
+
+    section h3 {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 35px 10px;
+        min-height: 190px;
+    }
+
+    .hero h1 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 0.82rem;
+    }
+
+    nav ul {
+        gap: 8px 12px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    section {
+        padding: 30px 3.5%;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p {
+        font-size: 0.82rem;
+    }
+
+    .social-links a {
+        width: 36px;
+        height: 36px;
+        font-size: 1.05rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.2rem;
+    }
+}
